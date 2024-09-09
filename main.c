@@ -7,6 +7,7 @@ int main() {
     while(1) {
         switch(choix) {
             case 1:
+                printf("\n1: Ajoute une Livre\n2: Ajoute plusieur Livre\n0: retour aux menu principale");
                 // AjouteMenu();
                 break;
             case 2:
