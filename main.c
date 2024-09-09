@@ -38,7 +38,7 @@ int main()
             affichage(books, length);
             break;
         case 5:
-            // Recherche();
+            recherche(books, length);
             break;
         case 6:
             Trimenu(books, length);

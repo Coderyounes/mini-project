@@ -33,6 +33,8 @@ void Trimenu(Book_t books[], int count);
 void buleCroissant(Book_t books[], int count);
 void buleDecroissant(Book_t books[], int count);
 
+// search functions
+void recherche(Book_t books[], int count);
 // auxillary
 void welcome();
 void sousMenuMod();

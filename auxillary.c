@@ -29,6 +29,21 @@ void affichage(Book_t books[], int count)
     }
 }
 
+void recherche(Book_t books[], int count)
+{
+    char titre[MAX];
+    int i;
+    printf("Enter le titre a recherche: ");
+    scanf("%s", titre);
+    for (i = 0; i < count; i++)
+    {
+        if (strcmp(books[i].titre, titre) == 0)
+        {
+            printf("Found: %s %s %.2f %d \n", books[i].titre, books[i].auteur, books[i].prix, books[i].quantite);
+        }
+    }
+}
+
 void swap(Book_t *a, Book_t *b)
 {
     Book_t temp = *a;
