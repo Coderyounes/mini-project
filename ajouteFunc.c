@@ -2,9 +2,20 @@
 
 void ajouteUneLivre(Book_t books[], int count)
 {
-    // handle errors where Books is Full
+    int i;
+
+    if (count >= 99)
+    {
+        printf("Storage if Full\n");
+        return;
+    }
+
     printf("Enter le titre: ");
     scanf("%s", books[count].titre);
+    for (i = 0; books[count].titre[i]; i++)
+    {
+        books[count].titre[i] = tolower(books[count].titre[i]);
+    }
     printf("Enter le nom de l'auteur: ");
     scanf("%s", books[count].auteur);
     printf("Enter le prix: ");

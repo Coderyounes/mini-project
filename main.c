@@ -38,6 +38,7 @@ int main()
             affichage(books, length);
             break;
         case 5:
+            affichage(books, length);
             recherche(books, length);
             break;
         case 6:
