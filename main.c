@@ -25,9 +25,7 @@ int main()
             break;
         case 3:
             affichage(books, length);
-            printf("Quel le titre Vous Voulez Modifie?: ");
-            scanf("%s", word);
-            ModificationMenu(books, length, word);
+            ModificationMenu(books, length);
             clearString(word);
             affichage(books, length);
             break;
