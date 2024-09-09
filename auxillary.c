@@ -32,6 +32,10 @@ void statsMenu()
 void affichage(Book_t books[], int count)
 {
     int i;
+    if (count == 0)
+    {
+        printf("no Books\n");
+    }
     for (i = 0; i < count; i++)
     {
         printf("%s %s %.2f %d \n", books[i].titre, books[i].auteur, books[i].prix, books[i].quantite);
