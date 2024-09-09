@@ -30,7 +30,11 @@ int main()
             affichage(books, length);
             break;
         case 4:
-            // Suprression();
+            // BUG: sur le method de deletion
+            printf("Choisir Livre a supprimer(par titre): ");
+            scanf("%s", word);
+            length = deleteLivre(books, length, word);
+            clearString(word);
             break;
         case 5:
             // Recherche();

@@ -15,13 +15,18 @@ typedef struct book
     float prix;
 } Book_t;
 
-// Operation sur Livre
+// ajoute functions
 int AjouteMenu(Book_t books[], int mode, int length);
+
+// Modification functions
 void ModificationMenu(Book_t books[], int count);
 void modifQuantite(Book_t books[], int count, char titre[], int new);
 void modifPrix(Book_t books[], int count, char titre[], float new);
 void modifTitre(Book_t books[], int count, char titre[], char newtitre[]);
 void modifiGlobal(Book_t books[], int count, char titre[]);
+
+// delete functions
+int deleteLivre(Book_t books[], int count, char titre[]);
 
 // auxillary
 void welcome();
