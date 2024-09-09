@@ -16,4 +16,10 @@ typedef struct book {
     float prix; 
 }Book_t;
 
+// Operation sur Livre
+int AjouteMenu(int mode, int length);
+
+// auxillary
+void welcome();
+
 #endif /* MAIN_H */

@@ -2,13 +2,20 @@
 
 
 int main() {
-    int choix;
+    int choix, mode, length = 0;
 
     while(1) {
+        welcome();
+        printf("Entree Votre Choix: ");
+        scanf("%d", &choix);
+        getchar();
         switch(choix) {
             case 1:
-                printf("\n1: Ajoute une Livre\n2: Ajoute plusieur Livre\n0: retour aux menu principale");
-                // AjouteMenu();
+                printf("\n1: Ajoute une Livre\n2: Ajoute plusieur Livre\n0: retour aux menu principale\n");
+                printf("Choisir: ");
+                scanf("%d", &mode);
+                length = AjouteMenu(mode, length);
+                printf("%d", length);
                 break;
             case 2:
                 // Afficher();
