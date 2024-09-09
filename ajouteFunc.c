@@ -24,7 +24,7 @@ int  AjouteMenu(Book_t books[], int mode, int count) {
         case 2:
             printf("\nVous Voulez ajouter combien des livres");
             scanf("%d", &limit);
-            for ( int j = 0; j < limit; j++) {
+            for (j = 0; j < limit; j++) {
                 ajouteUneLivre(books, num);
                 num++;
             }
