@@ -28,10 +28,17 @@ void modifiGlobal(Book_t books[], int count, char titre[]);
 // delete functions
 int deleteLivre(Book_t books[], int count, char titre[]);
 
+// Tri functions
+void Trimenu(Book_t books[], int count);
+void buleCroissant(Book_t books[], int count);
+void buleDecroissant(Book_t books[], int count);
+
 // auxillary
 void welcome();
 void sousMenuMod();
+void trisousMenu();
 void affichage(Book_t books[], int count);
 void clearString(char *s);
+void swap(Book_t *a, Book_t *b);
 
 #endif /* MAIN_H */
