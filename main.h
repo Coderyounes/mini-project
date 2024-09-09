@@ -7,21 +7,20 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-
-typedef struct book {
+typedef struct book
+{
     char titre[MAX];
     char auteur[MAX];
     int quantite;
-    float prix; 
-}Book_t;
+    float prix;
+} Book_t;
 
 // Operation sur Livre
-int AjouteMenu(Book_t books[] ,int mode, int length);
-
+int AjouteMenu(Book_t books[], int mode, int length);
 
 // auxillary
 void welcome();
 void affichage(Book_t books[], int count);
+void clearString(char *s);
 
 #endif /* MAIN_H */
