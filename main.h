@@ -17,9 +17,11 @@ typedef struct book
 
 // Operation sur Livre
 int AjouteMenu(Book_t books[], int mode, int length);
-
+void ModificationMenu(Book_t books[], int count, char titre[]);
+void modifQuantite(Book_t books[], int count, char titre[]);
 // auxillary
 void welcome();
+void sousMenuMod();
 void affichage(Book_t books[], int count);
 void clearString(char *s);
 

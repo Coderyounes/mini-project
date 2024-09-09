@@ -24,8 +24,12 @@ int main()
             affichage(books, length);
             break;
         case 3:
-            ModificationMenu(books, word);
+            affichage(books, length);
+            printf("Quel le titre Vous Voulez Modifie?: ");
+            scanf("%s", word);
+            ModificationMenu(books, length, word);
             clearString(word);
+            affichage(books, length);
             break;
         case 4:
             // Suprression();
@@ -37,7 +41,7 @@ int main()
             // Statistique Menu
             break;
         case 0:
-            printf("Program is Closing...");
+            printf("Program is Closing...\n");
             exit(0);
         default:
             printf("Please Select From Menu\n");
