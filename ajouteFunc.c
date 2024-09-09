@@ -46,6 +46,9 @@ int AjouteMenu(Book_t books[], int mode, int count)
     case 0:
         printf("retour to menu\n");
         break;
+    default:
+        printf("bad character!\n");
+        exit(0);
     }
     return num;
 }

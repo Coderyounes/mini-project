@@ -47,6 +47,6 @@ void statistique(Book_t books[], int count)
         break;
     default:
         printf("Please enter value from 0 to 4\n");
-        break;
+        exit(0);
     }
 }
