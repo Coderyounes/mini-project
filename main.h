@@ -17,9 +17,11 @@ typedef struct book {
 }Book_t;
 
 // Operation sur Livre
-int AjouteMenu(int mode, int length);
+int AjouteMenu(Book_t books[] ,int mode, int length);
+
 
 // auxillary
 void welcome();
+void affichage(Book_t books[], int count);
 
 #endif /* MAIN_H */

@@ -2,6 +2,7 @@
 
 
 int main() {
+    Book_t books[100];
     int choix, mode, length = 0;
 
     while(1) {
@@ -14,11 +15,11 @@ int main() {
                 printf("\n1: Ajoute une Livre\n2: Ajoute plusieur Livre\n0: retour aux menu principale\n");
                 printf("Choisir: ");
                 scanf("%d", &mode);
-                length = AjouteMenu(mode, length);
+                length = AjouteMenu(books, mode, length);
                 printf("%d", length);
                 break;
             case 2:
-                // Afficher();
+                affichage(books, length);
                 break;
             case 3:
                 // ModificationMenu();

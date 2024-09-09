@@ -12,3 +12,10 @@ void welcome() {
     printf("7: statistique menu\n"); // menu->choix->result
     printf("0: exit\n");
 }
+
+void affichage(Book_t books[], int count) {
+    int i;
+    for(i = 0; i < count; i++) {
+        printf("%s %s %.2f %d \n", books[i].titre, books[i].auteur, books[i].prix, books[i].quantite);
+    }
+}
