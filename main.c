@@ -44,7 +44,7 @@ int main()
             Trimenu(books, length);
             break;
         case 7:
-            // Statistique Menu
+            statistique(books, length);
             break;
         case 0:
             printf("Program is Closing...\n");

@@ -20,6 +20,15 @@ void trisousMenu()
     printf("0: retourn to menu principal\n");
 }
 
+void statsMenu()
+{
+    printf("1: Calculer les  totals des livres\n");
+    printf("2: Calculer le total de stock\n");
+    printf("3: Calculer le prix de vente TTC\n");
+    printf("4: Calculer le moyenne des prix\n");
+    printf("0: retour to menu Principal\n");
+}
+
 void affichage(Book_t books[], int count)
 {
     int i;
@@ -42,6 +51,23 @@ void recherche(Book_t books[], int count)
             printf("Found: %s %s %.2f %d \n", books[i].titre, books[i].auteur, books[i].prix, books[i].quantite);
         }
     }
+}
+
+float CalcTTC(float price)
+{
+    float new = (price * 15) / 100;
+    return new + price;
+}
+
+float moyennePrix(Book_t books[], int count)
+{
+    int i;
+    float sum = 0.0;
+    for (i = 0; i < count; i++)
+    {
+        sum += books[i].prix;
+    }
+    return sum / count;
 }
 
 void swap(Book_t *a, Book_t *b)

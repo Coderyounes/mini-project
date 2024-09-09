@@ -35,12 +35,21 @@ void buleDecroissant(Book_t books[], int count);
 
 // search functions
 void recherche(Book_t books[], int count);
+
+// statistique functions
+void statistique(Book_t books[], int count);
+int TotalStock(Book_t books[], int count);
+void prixTTC(Book_t books[], int count);
+float moyennePrix(Book_t books[], int count);
+
 // auxillary
 void welcome();
 void sousMenuMod();
 void trisousMenu();
+void statsMenu();
 void affichage(Book_t books[], int count);
 void clearString(char *s);
 void swap(Book_t *a, Book_t *b);
+float CalcTTC(float price);
 
 #endif /* MAIN_H */
