@@ -91,6 +91,7 @@ void ModificationMenu(Book_t books[], int count)
         scanf("%d", &newquantite);
         modifQuantite(books, count, titre, newquantite);
         clearString(titre);
+        affichage(books, count);
         break;
     case 2:
         printf("Quel le livre que vous volez modifie entre le titre:");
@@ -99,6 +100,7 @@ void ModificationMenu(Book_t books[], int count)
         scanf("%f", &newprix);
         modifPrix(books, count, titre, newprix);
         clearString(titre);
+        affichage(books, count);
         break;
     case 3:
         printf("Quel le livre que vous volez modifie entre le titre:");
@@ -107,12 +109,14 @@ void ModificationMenu(Book_t books[], int count)
         scanf("%s", newtitre);
         modifTitre(books, count, titre, newtitre);
         clearString(titre);
+        affichage(books, count);
         break;
     case 4:
         printf("Quel le livre que vous volez modifie entre le titre:");
         scanf("%s", titre);
         modifiGlobal(books, count, titre);
         clearString(titre);
+        affichage(books, count);
         break;
     case 0:
         printf("retour to menu\n");

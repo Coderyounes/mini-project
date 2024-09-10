@@ -28,11 +28,13 @@ int AjouteMenu(Book_t books[], int mode, int count)
 {
     int num = count;
     int limit, j;
+    //getchar();
     switch (mode)
     {
     case 1:
         ajouteUneLivre(books, num);
         num++;
+        affichage(books, num);
         break;
     case 2:
         printf("\nVous Voulez ajouter combien des livres: ");
@@ -42,6 +44,7 @@ int AjouteMenu(Book_t books[], int mode, int count)
             ajouteUneLivre(books, num);
             num++;
         }
+        affichage(books, num);
         break;
     case 0:
         printf("retour to menu\n");

@@ -18,6 +18,7 @@ int main()
             printf("\n1: Ajoute une Livre\n2: Ajoute plusieur Livre\n0: retour aux menu principale\n");
             printf("Choisir: ");
             scanf("%d", &mode);
+            scanf("%*[^\n]");
             length = AjouteMenu(books, mode, length);
             break;
         case 2:
@@ -52,7 +53,7 @@ int main()
             exit(0);
         default:
             printf("Please Select From Menu\n");
-            exit(0);
+            break;
         }
     }
     return (0);

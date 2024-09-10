@@ -36,9 +36,10 @@ void affichage(Book_t books[], int count)
     {
         printf("no Books\n");
     }
+    printf("\n%20s  %20s  %20s  %20s\n", "Titre", "Auteur", "Prix", "quantite");
     for (i = 0; i < count; i++)
     {
-        printf("%s %s %.2f %d \n", books[i].titre, books[i].auteur, books[i].prix, books[i].quantite);
+        printf("%20s %20s %20.2f %20d\n", books[i].titre, books[i].auteur, books[i].prix, books[i].quantite);
     }
 }
 
