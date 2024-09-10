@@ -18,6 +18,7 @@ typedef struct book
 
 // ajoute functions
 int AjouteMenu(Book_t books[], int mode, int length);
+void ajouteUneLivre(Book_t books[], int count);
 
 // Modification functions
 void ModificationMenu(Book_t books[], int count);

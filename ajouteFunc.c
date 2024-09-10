@@ -10,17 +10,17 @@ void ajouteUneLivre(Book_t books[], int count)
         return;
     }
 
-    printf("Enter le titre: ");
+    printf("Enter le titre de livre %d: ", count);
     scanf("%s", books[count].titre);
     for (i = 0; books[count].titre[i]; i++)
     {
         books[count].titre[i] = tolower(books[count].titre[i]);
     }
-    printf("Enter le nom de l'auteur: ");
+    printf("Enter le nom de l'auteur %d: ", count);
     scanf("%s", books[count].auteur);
-    printf("Enter le prix: ");
+    printf("Enter le prix de livre %d: ", count);
     scanf(" %f", &books[count].prix);
-    printf("Enter la quantité: ");
+    printf("Enter la quantité de livre %d: ", count);
     scanf(" %d", &books[count].quantite);
 }
 
